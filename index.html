@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="main">
+        <div class="container2">
+            <center>
+                <h2>Registration form</h2>
+                <form id="my-form">
+                    <label for="name">Name</label>
+                    <input required type="text" id="name" name="Name" placeholder="Enter full name">
+                    <br><br>
+
+                    <label for="email">Email</label>
+                    <input required type="email" id="email" name="Email" placeholder="Enter email">
+                    <br><br>
+
+                    <label for="password">Password</label>
+                    <input required type="password" id="password" name="Password" placeholder="Enter password">
+                    <br><br>
+
+                    <label for="dob">Dob</label>
+                    <input required type="date" id="dob" name="Dob" min="1968-11-19" max="2005-11-19"/>
+                    <br><br>
+                    <input required type="checkbox" id="termsConditions" name="acceptTerms">
+                    <label for="acceptTerms">Accept terms & Conditions</label>
+                    <br><br>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </center>
+        </div>
+    </div>
+
+    <div>
+        <center>
+            
+            <div class="container1">
+                <h2>Entries</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Password</th>
+                            <th>Dob</th>
+                            <th>Accepted terms?</th>
+                        </tr>
+                    </thead>
+                    <tbody id="user-entries"></tbody>
+                    <!-- ... Entries are here ... -->
+                </table>
+            </div>
+        </center>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
